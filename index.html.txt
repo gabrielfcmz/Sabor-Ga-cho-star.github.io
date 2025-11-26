@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sabor Gaúcho – Picanha & Rodízio</title>
+  <style>
+    :root{--red:#8B0000;--accent:#B22222;--card:#fff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, Arial, sans-serif;margin:0;background:#f6f6f6;color:#222}
+    header{background:var(--red);color:#fff;padding:28px 16px;text-align:center}
+    header h1{margin:0;font-size:28px}
+    header p{margin:6px 0 0}
+    nav{background:var(--accent);padding:10px;text-align:center}
+    nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:600}
+    nav a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin:28px auto;padding:0 16px}
+    .card{background:var(--card);padding:18px;border-radius:10px;margin-bottom:20px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    h2{color:var(--red);margin-top:0}
+    ul{margin:8px 0 0 20px}
+    img.responsive{width:100%;height:auto;border-radius:8px;margin-top:12px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:10px;border:1px solid #e6e6e6;text-align:left}
+    th{background:#fafafa}
+    footer{background:var(--red);color:#fff;text-align:center;padding:14px;margin-top:18px}
+    .small{font-size:13px;color:#555}
+    .place{font-style:italic;color:#444}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Restaurante Sabor Gaúcho</h1>
+    <p>Especialidade em picanha e churrasco ao estilo gaúcho</p>
+  </header>
+
+  <nav>
+    <a href="#historia">História</a>
+    <a href="#localizacoes">Localizações</a>
+    <a href="#menu">Menu</a>
+    <a href="#galeria">Galeria</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="historia" class="card">
+      <h2>História</h2>
+      <p>O Sabor Gaúcho nasceu a partir da tradição do Rio Grande do Sul, com a missão de trazer o autêntico churrasco gaúcho para Portugal. Os fundadores, originários de cidades gaúchas onde o churrasco é parte da cultura, adaptaram receitas e cortes clássicos para o público europeu, mantendo o método tradicional de grelhar e fatiar as carnes à mesa.</p>
+      <p class="small">Esta secção foi preparada com base em informações públicas do próprio restaurante.</p>
+      <div class="grid">
+        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/01/home_sabor-gaucho_r2_c1.jpg" alt="Picanha assada no espeto">
+        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/03/menu_r2_c3.jpg" alt="Pedaços de picanha fatiada com vinagrete e batatas">
+      </div>
+    </section>
+
+    <section id="localizacoes" class="card">
+      <h2>Localizações (exemplos em Portugal)</h2>
+      <p>O Sabor Gaúcho tem várias unidades em Portugal, localizadas em shoppings e centros urbanos. Algumas unidades são:</p>
+      <ul>
+        <li>Lisboa — Armazéns do Chiado (R. do Carmo), Centro Vasco da Gama</li>
+        <li>Odivelas — Strada Outlet</li>
+        <li>Cascais — Cascais Shopping (Alcabideche)</li>
+        <li>Gaia — Arrábida Shopping</li>
+        <li>Guimarães — Guimarães Shopping</li>
+        <li>Maia — Maia Shopping</li>
+        <li>Antas / Porto — áreas junto ao Estádio do Dragão / shoppings</li>
+      </ul>
+      <p class="place">Para endereços e horários exatos, consulta a página oficial de restaurantes do Sabor Gaúcho.</p>
+    </section>
+
+    <section id="menu" class="card">
+      <h2>Menu (exemplos de pratos e preços)</h2>
+      <p>Segue um quadro com opções comuns encontradas no menu e em serviços de delivery. Os preços são aproximados e variam por unidade.</p>
+      <table>
+        <thead>
+          <tr><th>Prato / Opção</th><th>Preço aprox.</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Picanha com guarnição (individual)</td><td>€ 17,90</td></tr>
+          <tr><td>Picanha para 2 pessoas</td><td>€ 30,90</td></tr>
+          <tr><td>Maminha com guarnição</td><td>€ 15,90</td></tr>
+          <tr><td>Naco de picanha (porção maior)</td><td>€ 36,90</td></tr>
+          <tr><td>Misto de carnes (para 2)</td><td>€ 29,90</td></tr>
+          <tr><td>Rodízio / Buffet (varia por unidade)</td><td>a partir de € 12,98</td></tr>
+        </tbody>
+      </table>
+      <p class="small">*Valores recolhidos em menus públicos e plataformas de entrega — confirmar preço na unidade escolhida.</p>
+    </section>
+
+    <section id="galeria" class="card">
+      <h2>Galeria</h2>
+      <p>Abaixo estão imagens oficiais do restaurante e dos pratos. Estas imagens são públicas no site oficial do Sabor Gaúcho.</p>
+      <div class="grid">
+        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/01/home_sabor-gaucho_r2_c1.jpg" alt="Picanha no espeto (imagem oficial)">
+        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/03/menu_r2_c3.jpg" alt="Porção de picanha fatiada (imagem oficial)">
+        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/03/menu_r1_c1.jpg" alt="Guarnição e mate (imagem oficial)">
+        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/01/home_sabor-gaucho_r4_c4.jpg" alt="Ambiente do restaurante (imagem oficial)" onerror="this.style.display='none'">
+      </div>
+      <p class="small">Se alguma imagem não carregar é possível que a unidade do site esteja temporariamente limitando acessos — nesse caso o ficheiro local com as imagens também pode ser usado.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – Trabalho académico sobre o Sabor Gaúcho</p>
+  </footer>
+
+</body>
+</html>
