@@ -1,110 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Sabor Gaúcho – Picanha & Rodízio</title>
-  <style>
-    :root{--red:#8B0000;--accent:#B22222;--card:#fff}
-    *{box-sizing:border-box}
-    body{font-family:Inter, Arial, sans-serif;margin:0;background:#f6f6f6;color:#222}
-    header{background:var(--red);color:#fff;padding:28px 16px;text-align:center}
-    header h1{margin:0;font-size:28px}
-    header p{margin:6px 0 0}
-    nav{background:var(--accent);padding:10px;text-align:center}
-    nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:600}
-    nav a:hover{text-decoration:underline}
-    .container{max-width:1000px;margin:28px auto;padding:0 16px}
-    .card{background:var(--card);padding:18px;border-radius:10px;margin-bottom:20px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
-    h2{color:var(--red);margin-top:0}
-    ul{margin:8px 0 0 20px}
-    img.responsive{width:100%;height:auto;border-radius:8px;margin-top:12px}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    @media(max-width:720px){.grid{grid-template-columns:1fr}}
-    table{width:100%;border-collapse:collapse;margin-top:12px}
-    th,td{padding:10px;border:1px solid #e6e6e6;text-align:left}
-    th{background:#fafafa}
-    footer{background:var(--red);color:#fff;text-align:center;padding:14px;margin-top:18px}
-    .small{font-size:13px;color:#555}
-    .place{font-style:italic;color:#444}
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabor Gaúcho - Picanha Autêntica</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background: #8B0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #b30000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .hero {
+            width: 100%;
+            height: 380px;
+            background-image: url('fachada-do-shopping.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2 {
+            color: #8B0000;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background: #8B0000;
+            color: white;
+        }
+
+        footer {
+            background: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Restaurante Sabor Gaúcho</h1>
-    <p>Especialidade em picanha e churrasco ao estilo gaúcho</p>
-  </header>
+    <header>
+        <h1>Sabor Gaúcho</h1>
+        <p>Picanha tradicional brasileira em Portugal</p>
+    </header>
 
-  <nav>
-    <a href="#historia">História</a>
-    <a href="#localizacoes">Localizações</a>
-    <a href="#menu">Menu</a>
-    <a href="#galeria">Galeria</a>
-  </nav>
+    <nav>
+        <a href="#historia">História</a>
+        <a href="#picanha">A Picanha</a>
+        <a href="#menu">Menu</a>
+        <a href="#localizacoes">Localizações</a>
+    </nav>
 
-  <main class="container">
+    <div class="hero"></div>
 
-    <section id="historia" class="card">
-      <h2>História</h2>
-      <p>O Sabor Gaúcho nasceu a partir da tradição do Rio Grande do Sul, com a missão de trazer o autêntico churrasco gaúcho para Portugal. Os fundadores, originários de cidades gaúchas onde o churrasco é parte da cultura, adaptaram receitas e cortes clássicos para o público europeu, mantendo o método tradicional de grelhar e fatiar as carnes à mesa.</p>
-      <p class="small">Esta secção foi preparada com base em informações públicas do próprio restaurante.</p>
-      <div class="grid">
-        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/01/home_sabor-gaucho_r2_c1.jpg" alt="Picanha assada no espeto">
-        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/03/menu_r2_c3.jpg" alt="Pedaços de picanha fatiada com vinagrete e batatas">
-      </div>
+    <section class="section" id="historia">
+        <h2>História</h2>
+        <p>Fundado com o objetivo de trazer os sabores autênticos do churrasco brasileiro, o Sabor Gaúcho tornou-se referência em Portugal pela qualidade da carne, ambiente acolhedor e tradição gaúcha.</p>
+        <p>A casa destaca-se principalmente pela sua famosa picanha preparada ao estilo tradicional, servida com acompanhamentos clássicos como arroz, feijão preto, farofa e vinagrete.</p>
     </section>
 
-    <section id="localizacoes" class="card">
-      <h2>Localizações (exemplos em Portugal)</h2>
-      <p>O Sabor Gaúcho tem várias unidades em Portugal, localizadas em shoppings e centros urbanos. Algumas unidades são:</p>
-      <ul>
-        <li>Lisboa — Armazéns do Chiado (R. do Carmo), Centro Vasco da Gama</li>
-        <li>Odivelas — Strada Outlet</li>
-        <li>Cascais — Cascais Shopping (Alcabideche)</li>
-        <li>Gaia — Arrábida Shopping</li>
-        <li>Guimarães — Guimarães Shopping</li>
-        <li>Maia — Maia Shopping</li>
-        <li>Antas / Porto — áreas junto ao Estádio do Dragão / shoppings</li>
-      </ul>
-      <p class="place">Para endereços e horários exatos, consulta a página oficial de restaurantes do Sabor Gaúcho.</p>
+    <section class="section" id="picanha">
+        <h2>A Famosa Picanha</h2>
+        <p>A picanha do Sabor Gaúcho é selecionada de forma rigorosa, grelhada na pedra ou na brasa e servida no ponto ideal. É o prato mais procurado do restaurante e a estrela do menu.</p>
+
+        <div class="gallery">
+            <img src="b4facf495c22df52f3ca635379ebe613.jpeg" />
+            <img src="sabor-gaucho.jpg" />
+            <img src="fachada-do-shopping.jpg" />
+        </div>
     </section>
 
-    <section id="menu" class="card">
-      <h2>Menu (exemplos de pratos e preços)</h2>
-      <p>Segue um quadro com opções comuns encontradas no menu e em serviços de delivery. Os preços são aproximados e variam por unidade.</p>
-      <table>
-        <thead>
-          <tr><th>Prato / Opção</th><th>Preço aprox.</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Picanha com guarnição (individual)</td><td>€ 17,90</td></tr>
-          <tr><td>Picanha para 2 pessoas</td><td>€ 30,90</td></tr>
-          <tr><td>Maminha com guarnição</td><td>€ 15,90</td></tr>
-          <tr><td>Naco de picanha (porção maior)</td><td>€ 36,90</td></tr>
-          <tr><td>Misto de carnes (para 2)</td><td>€ 29,90</td></tr>
-          <tr><td>Rodízio / Buffet (varia por unidade)</td><td>a partir de € 12,98</td></tr>
-        </tbody>
-      </table>
-      <p class="small">*Valores recolhidos em menus públicos e plataformas de entrega — confirmar preço na unidade escolhida.</p>
+    <section class="section" id="menu">
+        <h2>Menu Completo</h2>
+        <p>Abaixo está um exemplo dos principais pratos servidos:</p>
+
+        <table>
+            <tr>
+                <th>Prato</th>
+                <th>Descrição</th>
+                <th>Preço (€)</th>
+            </tr>
+            <tr>
+                <td>Picanha na Pedra</td>
+                <td>Picanha fresca servida com arroz, feijão, salada e farofa.</td>
+                <td>18,00</td>
+            </tr>
+            <tr>
+                <td>Churrasco Misto</td>
+                <td>Mix de carnes selecionadas grelhadas na brasa.</td>
+                <td>15,50</td>
+            </tr>
+            <tr>
+                <td>Frango Grelhado</td>
+                <td>Frango marinado ao estilo brasileiro.</td>
+                <td>10,00</td>
+            </tr>
+            <tr>
+                <td>Feijoada</td>
+                <td>Clássica feijoada brasileira servida com arroz e farofa.</td>
+                <td>12,50</td>
+            </tr>
+        </table>
     </section>
 
-    <section id="galeria" class="card">
-      <h2>Galeria</h2>
-      <p>Abaixo estão imagens oficiais do restaurante e dos pratos. Estas imagens são públicas no site oficial do Sabor Gaúcho.</p>
-      <div class="grid">
-        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/01/home_sabor-gaucho_r2_c1.jpg" alt="Picanha no espeto (imagem oficial)">
-        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/03/menu_r2_c3.jpg" alt="Porção de picanha fatiada (imagem oficial)">
-        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/03/menu_r1_c1.jpg" alt="Guarnição e mate (imagem oficial)">
-        <img class="responsive" src="https://saborgaucho.pt/wp-content/uploads/2024/01/home_sabor-gaucho_r4_c4.jpg" alt="Ambiente do restaurante (imagem oficial)" onerror="this.style.display='none'">
-      </div>
-      <p class="small">Se alguma imagem não carregar é possível que a unidade do site esteja temporariamente limitando acessos — nesse caso o ficheiro local com as imagens também pode ser usado.</p>
+    <section class="section" id="localizacoes">
+        <h2>Localizações</h2>
+        <p>O Sabor Gaúcho possui unidades nas seguintes cidades de Portugal:</p>
+        <ul>
+            <li>Lisboa – Avenida da República</li>
+            <li>Porto – Vila Nova de Gaia</li>
+            <li>Braga – Centro Comercial Braga Parque</li>
+            <li>Coimbra – Rua Ferreira Borges</li>
+        </ul>
     </section>
 
-  </main>
-
-  <footer>
-    <p>&copy; 2025 – Trabalho académico sobre o Sabor Gaúcho</p>
-  </footer>
-
+    <footer>
+        <p>Sabor Gaúcho © 2025 - Site escolar desenvolvido para trabalho</p>
+    </footer>
 </body>
 </html>
